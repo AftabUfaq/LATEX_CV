@@ -1,0 +1,227 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CV
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[10pt,a4paper]{altacv}
+
+% Layout
+\geometry{
+  left=1cm,
+  right=9cm,
+  marginparwidth=6.8cm,
+  marginparsep=1.2cm,
+  top=1.25cm,
+  bottom=1.25cm,
+  footskip=2\baselineskip
+}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+
+% Colors
+\definecolor{accent}{HTML}{000e17}
+\definecolor{heading}{HTML}{000e17}
+\definecolor{emphasis}{HTML}{000000}
+\definecolor{body}{HTML}{000000}
+
+\colorlet{heading}{heading}
+\colorlet{accent}{accent}
+\colorlet{emphasis}{emphasis}
+\colorlet{body}{body}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+% --------------------
+% Custom Commands
+% --------------------
+
+% Experience Event
+\newcommand{\cvexperience}[4]{%
+  {\large\textbf{\color{emphasis}#1}\par}
+  \smallskip
+  {\color{accent}#2\par}
+  \smallskip
+  {\small
+    \makebox[0.5\linewidth][l]{#3}%
+    \makebox[0.5\linewidth][l]{#4}
+    \par
+  }
+  \medskip
+}
+
+
+
+% --------------------
+% Document
+% --------------------
+
+\begin{document}
+
+\name{Aftab Amin}
+\tagline{Senior React Native Developer}
+
+\personalinfo{
+  \email{engr.aftabufaq@gmail.com}
+  \phone{+92 340 8906107}
+  \location{Islamabad, Pakistan}
+  \homepage{stackoverflow.com/users/9570734/engr-aftab-ufaq}
+  \github{github.com/AftabUfaq}
+  \linkedin{linkedin.com/in/aftab-amin-2588a515a}
+}
+
+\begin{fullwidth}
+\makecvheader
+
+% --------------------
+% Summary
+% --------------------
+
+\cvsection{Summary}
+
+Highly skilled and results-driven React Native Developer with 4.5+ years of experience in mobile application and back-end development (Node.js, AWS). Proven expertise in designing, developing, and deploying high-performance iOS and Android applications with over 10 published apps and 50M+ global users.
+
+\begin{itemize}
+  \item Scaled backends handling billions of database rows, achieving response times between 300 ms and 2 s.
+  \item Architected and deployed AWS infrastructures (EC2, S3, Nginx, Reverse Proxy) with zero-downtime migrations.
+  \item Delivered robust REST APIs supporting millions of active users.
+  \item Hands-on experience with VPN apps, real-time tracking systems, and large-scale consumer platforms.
+  \item Strong focus on performance optimization, clean architecture, and cross-team collaboration.
+\end{itemize}
+
+% --------------------
+% Experience
+% --------------------
+
+\cvsection[page1sidebar]{Experience}
+
+\cvexperience
+{Senior React Native Developer}
+{Vendo (Remote)}
+{March 2024 -- Present}
+{Berlin, Germany}
+
+\divider
+
+\cvexperience
+{Senior React Native Developer}
+{Zoobi Apps \& Games Technologies}
+{Sep 2022 -- Present}
+{Islamabad, Pakistan}
+
+\divider
+
+\cvexperience
+{Senior React Native Developer}
+{Virtelligence}
+{Jan 2022 -- Sep 2022}
+{Rawalpindi, Pakistan}
+
+\divider
+
+\cvexperience
+{Senior React Native Developer}
+{Code Freaks (Full Time / Remote)}
+{Aug 2021 -- Jun 2022}
+{Islamabad, Pakistan}
+
+\divider
+
+\cvexperience
+{React Native Developer}
+{Zoobi Apps \& Games Technologies}
+{Aug 2020 -- Aug 2021}
+{Islamabad, Pakistan}
+
+% --------------------
+% Projects
+% --------------------
+
+\cvsection[page2sidebar]{Projects}
+
+
+\cvproject
+{Vendo}
+{Mobile App for online shopping and order management}
+{https://apps.apple.com/us/app/vendo/id1640955198}
+{https://play.google.com/store/apps/details?id=com.vendo}
+
+\divider
+
+\cvproject
+{VaultPay}
+{Borderless digital payments mobile application}
+{https://apps.apple.com/us/app/vaultpay-borderless-payments/id6755896628}
+{https://play.google.com/store/apps/details?id=com.venmob.app\&hl=en}
+
+\divider
+
+\cvproject
+{RecruitBPM}
+{Web-based recruitment and business process management system}
+{}
+{https://www.recruitbpm.com/}
+
+\divider
+
+\cvproject
+{CareerPaths}
+{Career development and guidance mobile application}
+{https://apps.apple.com/us/app/careerpaths/id1558302311}
+{https://play.google.com/store/apps/details?id=com.careerpaths.mobile}
+
+\divider
+
+\cvproject
+{Winchit}
+{On-demand winch and roadside assistance app}
+{https://apps.apple.com/us/app/winchit/id1642303948}
+{https://play.google.com/store/apps/details?id=com.codefreaks.winchitapp.customer}
+
+\divider
+
+\cvproject
+{Gasme}
+{Web platform for gas station management}
+{}
+{https://dev.gasame.com}
+
+\divider
+
+\cvproject
+{Salvek}
+{Mobile app for service booking and management}
+{https://apps.apple.com/us/app/salvek/id6747908309}
+{https://play.google.com/store/apps/details?id=com.salvek.salvekapp}
+
+\divider
+
+\cvproject
+{Phone Tracker By Number}
+{Real-time phone number tracking and family safety app}
+{https://apps.apple.com/us/app/find-us-phone-number-location/id1672969168}
+{https://play.google.com/store/apps/details?id=com.location.track.familytracker}
+
+\divider
+
+\cvproject
+{CMPND (Workout)}
+{Workout and fitness tracking mobile application}
+{https://apps.apple.com/us/app/cmpnd-gym-workout-app/id6448755963}
+{https://play.google.com/store/apps/details?id=com.cmpnd}
+
+\divider
+
+\cvproject
+{ZD Now}
+{Online dating and social networking mobile app}
+{}
+{https://play.google.com/store/apps/details?id=com.zodiac.dating.now}
+
+
+\end{fullwidth}
+\end{document}
